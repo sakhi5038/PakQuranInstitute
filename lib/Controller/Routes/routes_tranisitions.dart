@@ -1,0 +1,2 @@
+//  ! Routes Transition.
+class RoutesTransition {}

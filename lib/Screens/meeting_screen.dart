@@ -1,7 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_pak_quran_institute/widgets/home_meeting_button.dart';
 import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
+
+import '../Components/widgets/home_meeting_button.dart';
 
 class MeetingScreen extends StatelessWidget {
   MeetingScreen({Key? key}) : super(key: key);
@@ -11,8 +12,7 @@ class MeetingScreen extends StatelessWidget {
   createNewMeeting() async {
     var random = Random();
     String roomName = (random.nextInt(10000000) + 10000000).toString();
-    _jitsiMeetMethods.join(JitsiMeetConferenceOptions(room: 'room2')  
-        );
+    _jitsiMeetMethods.join(JitsiMeetConferenceOptions(room: 'room2'));
   }
 
   joinMeeting(BuildContext context) {

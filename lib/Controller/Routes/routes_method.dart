@@ -1,0 +1,2 @@
+// ! Routes Method
+class RoutesMethod {}

@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_application_pak_quran_institute/Screens/welcome_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
+import '../Export/export_file.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -26,16 +26,15 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white, // Set your desired background color
-      body: Stack(
-        children: [
-          Center(child: Image.asset('assets/images/pak_quran_logo.jpg')),
-          const Center(
+      body: Stack(children: [
+        Center(child: Image.asset('assets/images/pak_quran_logo.jpg')),
+        const Center(
           child: SpinKitFadingCircle(
             color: Colors.green, // Set your desired spinner color
             size: 50.0,
           ),
-        ),]
-      ),
+        ),
+      ]),
     );
   }
 }

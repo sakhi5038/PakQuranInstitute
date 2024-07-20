@@ -1,13 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_application_pak_quran_institute/resources/auth_methods.dart';
-import 'package:flutter_application_pak_quran_institute/utils/colors.dart';
-import 'package:flutter_application_pak_quran_institute/widgets/meeting_option_button.dart';
 import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
-// import 'package:jitsi_meet/jitsi_meet.dart';
-// import 'package:zoom_clone_tutorial/resources/auth_methods.dart';
-// import 'package:zoom_clone_tutorial/resources/jitsi_meet_methods.dart';
-// import 'package:zoom_clone_tutorial/utils/colors.dart';
-// import 'package:zoom_clone_tutorial/widgets/meeting_option.dart';
+
+import '../Components/resources/colors.dart';
+import '../Components/widgets/meeting_option_button.dart';
+import '../Export/export_file.dart';
 
 class VideoCallScreen extends StatefulWidget {
   const VideoCallScreen({Key? key}) : super(key: key);
@@ -42,9 +38,9 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
   }
 
   _joinMeeting() {
-    _jitsiMeetMethods.join(
-      JitsiMeetConferenceOptions(room: 'room1', )
-    );
+    _jitsiMeetMethods.join(JitsiMeetConferenceOptions(
+      room: 'room1',
+    ));
   }
 
   @override

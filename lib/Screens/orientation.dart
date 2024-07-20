@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../Export/export_file.dart';
 
 class OrientationModeWidget extends StatelessWidget {
   final Orientation orientation;
